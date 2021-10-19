@@ -1,0 +1,228 @@
+:root {
+  --clr-primary-200: rgb(59, 59, 59);
+  --clr-primary-500: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+  --clr-accent: linear-gradient(315deg, #51687a 0%, #d2ccc4 74%);
+  --clr-light: #ffffff;
+  --clr-button: linear-gradient(315deg, #90d5ec 0%, #257070 74%);
+  --clr-netural-100: #b1d4e0;
+  --clr-netural-900: #2e8bc0;
+
+  --ff-primary: "Raleway", sans-serif;
+  --ff-accent: "Roboto Condensed", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--ff-primary);
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+i {
+  margin-bottom: 3rem;
+  color: rgb(235, 75, 17);
+}
+.fa-css3-alt {
+  color: rgb(0, 238, 255);
+}
+.fa-python {
+  color: rgb(211, 211, 8);
+}
+.header {
+  position: relative;
+  padding: 7%;
+  word-wrap: normal;
+  text-align: center;
+  background: var(--clr-primary-500);
+  font-size: 1.6rem;
+  line-height: 1;
+  color: var(--clr-light);
+}
+h1,
+h3 {
+  box-shadow: 0 10px 50px rgb(0 0 80 / 0.4);
+  text-align: center;
+  border-radius: 20px;
+  color: var(--clr-light);
+}
+h1 {
+  height: 113px;
+}
+h3 {
+  margin-top: 5%;
+  margin-bottom: 1em;
+  font-size: 1.2;
+  background: var(--clr-primary-200);
+  border: 2px solid var(--clr-light);
+}
+p {
+  margin-bottom: 1em;
+  margin-left: 1.5em;
+  color: rgb(53, 59, 63);
+}
+.inner-header {
+  background-color: var(--clr-primary-200);
+  border: 5px solid rgb(54, 50, 47);
+  max-width: 100%;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+li {
+  margin: 0.3%;
+}
+
+button {
+  display: inline-block;
+  min-width: 21rem;
+  height: 80px;
+  border: 0.1em solid #ffffff;
+  background: var(--clr-button);
+  border-radius: 0.3em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: var(--clr-accent);
+  font-size: 1.4em;
+  font-weight: 900;
+  color: var(--clr-light);
+  text-align: center;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+button:hover {
+  color: rgb(54, 50, 47);
+  background-color: #90d5ec;
+  background-image: linear-gradient(315deg, #90d5ec 0%, #1b5555 74%);
+  border-radius: 30px;
+}
+section {
+  padding: 3rem;
+  border: 0.1px solid black;
+  color: var(--clr-light);
+  background: var(--clr-accent);
+}
+.section1 {
+  background: var(--clr-accent);
+}
+.container {
+  margin-inline: auto;
+  width: min(90%, 90rem);
+}
+.container2 {
+  margin-top: 8%;
+  min-width: 40%;
+}
+.split {
+  display: flex;
+}
+.container--narrow {
+  max-width: 40rem;
+}
+.box1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+pre {
+  align-self: flex-start;
+  font-size: 0.8em;
+  padding: 2% 5% 0% 5%;
+  border-radius: 20px;
+  max-width: 100%;
+  margin-left: 15%;
+  margin-top: 8%;
+  font-family: var(--ff-accent);
+  border: 5px solid var(--clr-light);
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  background-color: rgb(59, 59, 59);
+}
+.html-pre {
+  padding-top: 3%;
+}
+span {
+  color: var(--clr-light);
+}
+b:hover {
+  color: #0c91ba;
+}
+img {
+  max-width: 100%;
+  margin-left: 7%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-radius: 20px;
+  border: 5px solid var(--clr-light);
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  background-color: rgb(59, 59, 59);
+}
+.annoyingPre {
+  padding-top: 8%;
+  padding-left: 10%;
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+    font-size: 1.3rem;
+  }
+  ul {
+    flex-direction: column;
+    max-width: 100%;
+  }
+  button {
+    min-width: 100%;
+    height: 50px;
+  }
+  .split {
+    width: 100%;
+    display: inline-block;
+  }
+  pre {
+    margin: 0 auto;
+    margin-bottom: 5%;
+    max-width: 25rem;
+  }
+  img {
+    margin-left: 0%;
+  }
+}
+@media only screen and (max-width: 750px) {
+  body {
+    font-size: 1.2rem;
+  }
+  h1,
+  h2 {
+    font-size: 2.4rem;
+  }
+  section {
+    padding: 0rem;
+  }
+  pre {
+    overflow-x: scroll;
+  }
+  img {
+    max-width: 100%;
+    margin-left: 0%;
+  }
+
+  @media only screen and (max-width: 500px) {
+    h1,
+    h2 {
+      font-size: 1.8rem;
+    }
+  }
+  @media (min-width: 1650px) {
+    button {
+      min-width: 530px;
+    }
+  }
+}
