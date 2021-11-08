@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100&display=swap" rel="stylesheet"> 
+    <script
+      src="https://kit.fontawesome.com/cefdeeed52.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>HTML Page</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container container--narrow">
+        <i class="fab fa-html5 fa-5x"></i>
+        <h1>My Personal guide to HTML, CSS and Python</h1>
+        <br />
+        <br />
+        <br />
+        <h2><span>Page 1 - Beginning HTML<span></h2>
+      </div>
+    </div>
+    <div class="inner-header">
+      <ul>
+        <li>
+          <a href="index.php"><button>HTML</button></a>
+        </li>
+        <li>
+          <a href="css.php"><button>CSS</button></a>
+        </li>
+        <li>
+          <a href="python.php"><button>Python</button></a>
+        </li>
+      </ul>
+    </div>
+    <section class="section1">
+      <div class="container">
+        <div class="split">
+          <div>
+            <h3>Basic Structure of HTML</h3>
+            <p>
+              The basic HTML structure can be quickly auto completed using emmet.
+              Just type <span>!</span> then hold <span>Shift</span> and hit 
+              <span>Enter</span><br /><br />
+              The <span>&lt;head&gt;</span> contains all the metadata (document
+              title, character set, styles, links and scripts), specific
+              information about the web page that is not displayed to the
+              user.<br /><br />
+              The <span>&lt;title&gt;</span> will contain the title of your document which 
+              will be displayed in the tab header at the top of the page<br /><br />
+              The <span>&lt;body&gt;</span> contains all the main content of the
+              website which will be displayed to the browser<br /><br />
+              The <span>&lt;div&gt;</span> tag is used in HTML to make divisions
+              of content in the web page and to group content together<br /><br />
+              The <span>&lt;p&gt;</span> tag represents a paragraph of text
+            </p>
+          </div>
+          <pre class="html-pre">
+&lt;!doctype html&gt;
+    &lt;html&gt;
+        &lt;head&gt;
+            &lt;meta charset="utf-8"&gt;
+            &lt;title&gt;test page&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;div&gt;
+                &lt;p&gt;Hello World.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;
+              </pre
+          >
+        </div>
+      </div>
+    </section>
+    <section class="section2">
+      <div class="container">
+        <div class="split">
+          <div>
+            <h3>Creating lists and links in HTML</h3>
+            <p>
+              Using a <span>class</span> such as in <span>&lt;div class = "container"&gt;</span> allows 
+              to create a group that can all be targeted by the same CSS style properties.<br /><br />
+              <span>&lt;ul&gt;</span> is one type of list which creates an unordered list, the other
+              type is an ordered list <span>&lt;ol&gt;</span> which will be numbered<br /><br />
+              The <span>&lt;li&gt;</span> tag is used inside a list and is used for each separate 
+              item inside a list<br /><br />
+              The <span>&lt;a&gt;</span> tag is put around anything that will be linked to another Page
+              whether that be another website or a different pag from your website.
+            </p>
+          </div>
+          <pre class="html-pre">
+&lt;body&gt;
+    &lt;div class = "container"&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href=""&gt;Link1&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=""&gt;Link2&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="" target="_blank"&gt;Link3&lt;/a&gt;&lt;/li&gt;
+        &lt;/table&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+              </pre
+          >
+        </div>
+      </div>
+    </section>
+    <section class="section3">
+      <div class="container">
+        <div class="split">
+          <div>
+            <h3>Creating HTML tables</h3>
+            <p>
+              The <span>&lt;table&gt;</span> tag creates a table which by default doesn't have any borders.<br /><br />
+              A table will have normally have multiple rows inside it written as <span>&lt;tr&gt;</span><br /><br /> 
+              Each row will have cells inside it, the first row of a table will often be a header for each column 
+              written as <span>&lt;th&gt;</span>,<br /><br /> Latsly each row will have table data cells 
+              written as<span>&lt;td&gt;</span> normally with some information inside them<br /><br />
+            </p>
+          </div>
+          <pre class="html-pre">
+&lt;body&gt;
+  &lt;div class = "container"&gt;
+    &lt;table&gt;
+        &lt;tr&gt;
+          &lt;th&gt;Title1&lt;/th&gt;
+          &lt;th&gt;Title2&lt;/th&gt;
+          &lt;th&gt;Title3&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;item1&lt;/td&gt;
+          &lt;td&gt;item2&lt;/td&gt;
+          &lt;td&gt;item3&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+              </pre
+          >
+        </div>
+      </div>
+    </section>
+  </body>
+  <body>
+    <div id="form_block">
+        <h5 id="tag">Please leave your details below</h5>
+        <form class="php-form" action="contacts_connection.php" method="post">
+            <table class="php-table">
+                <tr class="php-tr">
+                    <td class="php-td"><label class="php-label">First Name:</label></td>
+                    <td class="php-td"><input id="first_name" class="php-input" name="first_name" type="text" autocomplete="off" required></td>
+                </tr>
+                <tr class="php-tr">
+                    <td class="php-td"><label class="php-label">Last Name:</label></td>
+                    <td class="php-td"><input id="last_name" class="php-input" name="last_name" autocomplete="off" required></input></td>
+                </tr>
+                <tr class="php-tr">
+                    <td class="php-td"><label class="php-label">Phone Number:</label></td>
+                    <td class="php-td"><input id="phone" class="php-input" name="phone" autocomplete="off" required></input></td>
+                </tr>
+                <tr class="php-tr">
+                    <td class="php-td"><label class="php-label">Email Address:</label></td>
+                    <td class="php-td"><input id="email" class="php-input" name="email" autocomplete="off" required></input></td>
+                </tr>
+                <tr class="php-tr">
+                    <td class="php-td"><label class="php-label">Message Subject</label></td>
+                    <td class="php-td"><input id="subject" class="php-input" name="subject" autocomplete="off" required></input></td>
+                </tr>
+                <tr class="php-tr">
+                    <td class="php-td"><label class="php-label">Message</label></td>
+                    <td class="php-td"><textarea id="message" class="php-textarea" name="message" autocomplete="off" required></textarea></td>
+                </tr>
+            </table>
+            <button type="submit" class="php-button">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
